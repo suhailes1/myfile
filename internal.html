@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inside html</title>
+        <link rel="stylesheet" href="D:\Visual Studio\stylesheet.css">
+        <!--<style>
+            .mars{
+                display: block;
+                height:auto;
+                width: fit-content;
+                background-color: aliceblue;
+                padding: 20px;
+                color: blue;
+                text-align:center;
+            }
+            body{
+                background-image: url('https://drive.google.com/uc?export=view&id=1fWiAeUDUnA-rMvW64rLhPxuLZs4PAvIK');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            h1 {
+                color: white;
+                border: 1px solid white;
+                padding: 50px;
+                font-size: 300%;
+                text-align: center;
+            }
+            p {
+                color:aliceblue;
+                text-align:left;
+
+            }
+
+        </style> -->
+    </head>
+    <body>
+        <h1>this is inside html page</h1>
+        <div class="mars">
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+            <p>jst for demo purpose</p>
+            <p>testing and learning purpose. only demo items</p>
+
+        </div>
+        <iframe src="D:\Visual Studio/workout.html" name="iframe_a" style="width: 900px; height: 550px;" title="other website"></iframe>
+        <p><a href="D:\Visual Studio/internal.html" target="iframe_a">click</a></p>
+        <p id="demo"></p>
+        <script>
+            function myfunction(val)
+            {
+                var pic;
+                if(val == 0)
+                {
+                    pic="https://drive.google.com/uc?export=view&id=16CoAj4uPDIJcCLIBbD65DbCekagIa1RP"
+                }
+                else
+                {
+                    pic="https://drive.google.com/uc?export=view&id=1z_rvlBBX48HGRRhXxM0dwo29MVFZqbxe"
+                }
+                document.getElementById("image").src=pic;
+            }
+        document.getElementById("demo").innerHTML="Hello JavaScript"
+        document.getElementById("demo").style.fontSize="25px"
+        </script>
+        <img id="image" src="https://drive.google.com/uc?export=view&id=16CoAj4uPDIJcCLIBbD65DbCekagIa1RP" width="200" height="280">
+        <p>
+        <button type="button" onclick="myfunction(1)">light ON</button>
+        <button type="button" onclick="myfunction(0)">light OFF</button>
+        </p>
+        <img src="D:\Visual Studio\suhail.jpg" alt="suhail's image">
+        <h2 style="font-size:10vw;color: aliceblue;">Hello World</h2>
+
+    </body>
+</html>

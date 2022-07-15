@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+/* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+
+/* Style the list inside the menu */
+            nav ul {
+                list-style-type:circle;
+                padding: 0;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px; /* only for demonstration, should be removed */
+            }
+
+/* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+/* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                width: 100%;
+                height: auto;
+            }
+              }
+              </style>
+              </head>
+              <body>
+                <header>
+                <h2>Cities</h2>
+                </header>
+                <section>
+                  <nav>
+                    <ul>
+                      <li>India</li>
+                      <li>America</li>
+                      <li>Rassia</li>
+                   </ul>
+                  </nav>
+                  <article>
+                    <h1>India</h1>
+                    <p>India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[26] is a country in South Asia.
+                       It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world. 
+                       Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. 
+                       In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia.</p>
+                  </article>
+                </section>
+                <footer>
+                  <p>good work</p>
+               </footer>
+               <pre>
+               <code>
+                x=5; y=6; z=x*y
+               </code>
+               </pre>
+               <p>save the document press <kbd>ctrl+S</kbd></p>
+               <p>message from my computer:</p>
+               <p><samp>file not found.<br>press F1 to continue</samp></p>
+             </body>
+</html>
